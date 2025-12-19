@@ -74,6 +74,7 @@ def main3():
     print("x squared is", square(x))
 def square(n):
     # return the square of n
+    #######################
     # return n ** 2
     # return pow(n, 2)
     return n * n
