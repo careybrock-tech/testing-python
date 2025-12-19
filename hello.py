@@ -6,7 +6,7 @@ print(f"Hello world!")
 # title capitalizes the first letter of each word
 name = input("What is your name? ").strip().title()
 
-# print the name of user
+# print the name of user say hello user
 print(f"Hello {name}")
 
 # get user Age input and convert it to a integer
