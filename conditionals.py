@@ -125,19 +125,3 @@ def is_even2(n):
 main3()
 
 
-# match is like switch in other languages
-# it is used to check if a value matches one of the cases
-
-name = input("What is your name? ")
-match name:
-    case "Harry":
-        print("Gryffindor")
-    case "Hermione":
-        print("Gryffindor")
-    case "Ron":
-        print("Gryffindor")
-    case "Draco":
-        print("Slytherin")
-    case _:
-        print("Who?")
-# the _ is a wildcard, it matches any value that doesn't match the previous cases
