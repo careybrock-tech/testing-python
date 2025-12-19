@@ -117,7 +117,27 @@ def main3():
         print("Even")
     else:
         print("Odd")
+# the one-liner function is a more concise way to write the same code as the previous example
+# the is_even2 function takes an integer n and returns True if n is even, and False if n is odd
+# this is elgant way to write the function
 def is_even2(n):
     return (n % 2 == 0)
 main3()
 
+
+# match is like switch in other languages
+# it is used to check if a value matches one of the cases
+
+name = input("What is your name? ")
+match name:
+    case "Harry":
+        print("Gryffindor")
+    case "Hermione":
+        print("Gryffindor")
+    case "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
+# the _ is a wildcard, it matches any value that doesn't match the previous cases
