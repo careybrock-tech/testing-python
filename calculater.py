@@ -25,3 +25,22 @@ b  = int(input("What is b: "))
 # print the sum of x and y 
 print(a + b)
 
+# a float is a number with a decimal point
+# get user input for the number to add  
+c = float(input("What is c: "))
+# get user input for the number to add
+d = float(input("What is d: "))
+# create a variable to hold the sum of x and y 
+e = c + d   
+# print the sum of x and y  
+print(e)
+
+# a float is a number with a decimal point
+# get user input for the number to add  
+f = float(input("What is f: "))
+# get user input for the number to add
+g = float(input("What is g: "))
+# create a variable to hold the sum of x and y 
+h = f / g   
+# print the sum of x and y  
+print(h)
