@@ -1,4 +1,21 @@
+# Part 1 
 # Basics of python loops not good real slow
-print("Cool")
-print("Cool")
-print("Cool")
+#print("Cool")
+#print("Cool")
+#print("Cool")
+
+# Part 2 (do not run this code it will run forever)
+# while loop for better performance and readability its a boolean infinite loop 
+# infinite loop
+# i = 3
+#while i != 0:
+#   print("Cool")
+
+# part two while loop for better performance and readability its a boolean infinite loop
+# i = 3 means it will run 3 times.
+# i -= 1 means it will run 3 times and then stop.
+# if you say negative number there is a infinite loop and it will run forever.
+i = 7 # start the loop at 3
+while i != 0: #true
+    print("Cool")
+    i -= 1 # stop the loop after 3 times
