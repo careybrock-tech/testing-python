@@ -24,3 +24,7 @@ print(f"You are {age} years old.")
 print('hello, "friend"')
 # \ is used to escape the double quotes
 print("hello, \"friend\"")
+
+name2 = input("Hello bitch ass nigga, what is your name? ").strip().title()
+age2 = input("How old are you? ") # You need this line!
+print(f"Hello {name2}  you are {age2} years old.")
