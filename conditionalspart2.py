@@ -37,4 +37,4 @@ if name2 == "Harry" or name2 == "Hermione" or name2 == "Ron":
 elif name2 == "Draco":
     print("Slytherin")
 else:
-    print("Who?")
+    print("Who is He or Her?")
