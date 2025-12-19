@@ -67,3 +67,15 @@ n = round(l / m,2)
 # print the sum of x and y  
 #2f"{ is a sum of x and y is {n}")
 print(f"{n:.2f}")
+
+#  square the number in the function
+def main3():
+    x = int(input("What is x? "))
+    print("x squared is", square(x))
+def square(n):
+    # return the square of n
+    # return n ** 2
+    # return pow(n, 2)
+    return n * n
+
+main3()
