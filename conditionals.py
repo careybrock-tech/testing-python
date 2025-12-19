@@ -68,7 +68,7 @@ else:
     print("Grade: F")
 
 
-# partiy program can we divvide by two with no remainder 
+# partily program can we divide by two with no remainder 
 # % is the modulo operator, it returns the remainder of a division
 x = int(input("What is the value of x? "))
 # the if x % 2 == 0 is checking if x is divisible by 2 with no remainder
@@ -85,7 +85,10 @@ def main():
         print("Odd")    
 
 def is_even(n):
-    return n % 2 == 0
+    if n % 2 == 0:
+        return True
+    else:
+        return False
 
 main()
 
