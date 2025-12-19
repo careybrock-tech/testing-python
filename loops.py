@@ -26,3 +26,4 @@ while i <= 3: # print 3 times if 1 <= 3 then print cool 3 times
     print("Cool")
     i += 1 # increment i by 1 each time the loop runs
 
+# for loops allows us to loop through a sequence (such as a list, tuple, dictionary, set, or string). a set of items that we want to loop through.
