@@ -22,3 +22,5 @@ print(f"You are {age} years old.")
 
 # say hello to user double quotes
 print('hello, "friend"')
+# \ is used to escape the double quotes
+print("hello, \"friend\"")
