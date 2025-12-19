@@ -27,31 +27,43 @@ if x <= y:
     print("x is less than or equal to y")      
 # check if x is greater than or equal to y
 if x >= y:
-    print("x is greater than or equal to y")    
+    print("x is greater than or equal to y")  
+
+# or you can use the if-else statement to check multiple conditions in sequence.
+if x < y or x > y:
+    print("x is not equal to y")
+
+try:
+    # elif statement is a way to check multiple conditions in sequence.
+    a = int(input("What is the value of a? "))
+    # print what the user is b from user
+    b = int(input("What is the value of b? "))
+    # check if a is less than b
+    if a < b:
+        print("a is less than b")
+    # check if a is greater than b
+    elif a > b:
+        print("a is greater than b")    
+    # check if a is equal to b
+    elif a == b:
+        print("a is equal to b")    
+    # else statement is a catch-all for any other case
+    else:
+        print("Comparison complete")
+except ValueError:
+    print("That wasn't a number!")
 
 
-#elif statement is a way to check multiple conditions in sequence.
-a = int(input("What is the value of a? "))
-# print what the user is y from user
-b = int(input("What is the value of b? "))
-# check if a is less than b
-if a < b:
-    print("a is less than b")
-# check if a is greater than b
-elif a > b:
-    print("a is greater than b")    
-# check if a is equal to b
-elif a == b:
-    print("a is equal to b")    
-# check if a is not equal to b
-elif a != b:
-    print("a is not equal to b")    
-# check if a is less than or equal to b
-elif a <= b:
-    print("a is less than or equal to b")      
-# check if a is greater than or equal to b
-elif a >= b:
-    print("a is greater than or equal to b")   
-# else statement is a way to execute a block of code if the specified condition is false. Catch all with any questions 
+score = int(input("Score:"))
+if score >= 90 and score <= 100:
+    print("Grade: A")       
+elif score >= 80 and score < 90:
+    print("Grade: B")
+elif score >= 70 and score < 80:
+    print("Grade: C")
+elif score >= 60 and score < 70:
+    print("Grade: D")
 else:
-    print("a and b is not a number")
+    print("Grade: F")
+
+
