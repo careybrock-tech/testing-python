@@ -53,7 +53,8 @@ try:
 except ValueError:
     print("That wasn't a number!")
 
-
+# grading program using the and operator
+# the and operator is used to check if multiple conditions are true
 score = int(input("Score:"))
 if score >= 90 and score <= 100:
     print("Grade: A")       
@@ -65,5 +66,28 @@ elif score >= 60 and score < 70:
     print("Grade: D")
 else:
     print("Grade: F")
+
+
+# partiy program can we divvide by two with no remainder 
+# % is the modulo operator, it returns the remainder of a division
+x = int(input("What is the value of x? "))
+# the if x % 2 == 0 is checking if x is divisible by 2 with no remainder
+if x % 2 == 0:
+    print("Even")   
+else:
+    print("Odd")
+
+def main():
+    x = int(input("What is the value of x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")    
+
+def is_even(n):
+    return n % 2 == 0
+
+main()
+
 
 
