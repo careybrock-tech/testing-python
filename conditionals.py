@@ -68,6 +68,7 @@ else:
     print("Grade: F")
 
 
+# basics of even and odd numbers
 # partily program can we divide by two with no remainder 
 # % is the modulo operator, it returns the remainder of a division
 x = int(input("What is the value of x? "))
@@ -77,6 +78,9 @@ if x % 2 == 0:
 else:
     print("Odd")
 
+# main function to call the is_even function and print the result
+# part 2 of the program, we can use a function to check if a number is even or odd
+# the is_even function takes an integer n and returns True if n is even, and False if n is odd  
 def main():
     x = int(input("What is the value of x? "))
     if is_even(x):
@@ -89,8 +93,31 @@ def is_even(n):
         return True
     else:
         return False
-
 main()
 
+# part 3 of the program, we can use a one-liner function to check if a number is even or odd
+# the is_even2 function takes an integer n and returns True if n is even, and False if n is odd
+# the one-liner function is a more concise way to write the same code as the previous example
+def main2():
+    x = int(input("What is the value of x? "))
+    if is_even2(x):
+        print("Even")
+    else:
+        print("Odd")
+def is_even2(n):
+    return True if n % 2 == 0 else False
+main2()
 
+# part 4 of the program, we can use a one-liner function to check if a number is even or odd
+# the is_even2 function takes an integer n and returns True if n is even, and False if n is odd
+# the one-liner function is a more concise way to write the same code as the previous example
+def main3():
+    x = int(input("What is the value of x? "))
+    if is_even2(x):
+        print("Even")
+    else:
+        print("Odd")
+def is_even2(n):
+    return (n % 2 == 0)
+main3()
 
