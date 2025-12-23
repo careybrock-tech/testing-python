@@ -56,6 +56,7 @@ class Node:
         # Return the new node as the new head of the linked list
         return current_new_node_head
     
+    # Note learn insert method and prepend method
     def insert(self, anyvalue, position):
         # Create a new node with the given value
         new_node = Node(anyvalue)
