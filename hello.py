@@ -29,3 +29,6 @@ print("hello, \"friend\"")
 name2 = input("Hello, what is your name? ").strip().title()
 age2 = input("How old are you? ") # You need this line!
 print(f"Hello {name2}  you are {age2} years old.")
+
+# print the name and age of the user using  the format string 
+print(f"{name2}, {age2}")
