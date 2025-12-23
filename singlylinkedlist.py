@@ -55,6 +55,26 @@ class Node:
         current_new_node_head.next = self
         # Return the new node as the new head of the linked list
         return current_new_node_head
+    
+    def insert(self, anyvalue, position):
+        # Create a new node with the given value
+        new_node = Node(anyvalue)
+        # If the position is 0, insert at the beginning
+        if position == 0:
+            # Set the new node's next to the current head
+            new_node.next = self
+            return new_node
+        # Traverse the list to find the node at the specified position
+        current = self
+        # Move to the node just before the specified position
+        for _ in range(position - 1):
+            if current.next is None:
+                raise IndexError("Position out of range")
+            current = current.next
+        # Insert the new node at the specified position
+        new_node.next = current.next
+        current.next = new_node
+        return self
 
 node1 = Node(10)
 node2 = Node(1)   
