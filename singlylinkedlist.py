@@ -27,26 +27,35 @@ class Node:
             current = current.next
         return highest_value
     
-    def append(self, value):
+    def append(self, lastvalue):
         current = self
         while current.next is not None:
             current = current.next
-        current.next = Node(value)
-
+        current.next = Node(lastvalue)
     def delete(self, value):
         current = self
         while current is not None:
+            # find the specific node to delete
             if current.value == value:
                 current.next = current.next.next
                 return
             current = current.next
-    def prepend(self, value):
-        new_node = Node(value)
-        new_node.next = self
-        return new_node
-    
-    
-    
+    def find(self, value):
+        current = self
+        while current is not None:
+            # find the specific node in list
+            if current.value == value:
+                return True
+            current = current.next
+        return False
+    def prepend(self, firstvalue):
+        # Create a new node with the given value
+        current_new_node_head = Node(firstvalue)
+        # Set the new node's next to the current head
+        current_new_node_head.next = self
+        # Return the new node as the new head of the linked list
+        return current_new_node_head
+
 node1 = Node(10)
 node2 = Node(1)   
 node3 = Node(30)
