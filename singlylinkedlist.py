@@ -76,7 +76,44 @@ class Node:
         new_node.next = current.next
         current.next = new_node
         return self
-
+    def reverse(self):
+        # Initialize pointers for the previous, current, and next nodes
+        prev = None
+        current = self
+        while current is not None:
+            # Store the next node
+            next_node = current.next
+            # Reverse the current node's pointer
+            current.next = prev
+            # Move the pointers one step forward
+            prev = current
+            current = next_node
+        # Return the new head of the reversed linked list
+        return prev
+    def cycle(self):
+        slow = self
+        fast = self
+        while fast is not None and fast.next is not None:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False
+    def length(self):
+        current = self
+        count = 0
+        while current is not None:
+            count += 1
+            current = current.next
+        return count
+    def remove_duplicates(self):
+        current = self
+        while current is not None and current.next is not None:
+            if current.value == current.next.value:
+                current.next = current.next.next
+            else:
+                current = current.next
+        return self
 node1 = Node(10)
 node2 = Node(1)   
 node3 = Node(30)
